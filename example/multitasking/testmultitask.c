@@ -31,12 +31,12 @@ task clawMotors()
 task main()
 {
 
-  StartTask(driveMotors);   /* Comment out either of these two lines */
-  StartTask(clawMotors);   /* to see a Task running individually.   */
+  StartTask(driveMotors);
+  StartTask(clawMotors);
 
   while(SensorValue[pushButton]==0)
   {
-    // Keep the program alive
+    // Keep the program alive until pushButton is pressed
   }
 	StopAllTasks();
 }

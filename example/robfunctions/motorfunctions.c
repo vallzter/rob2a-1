@@ -56,4 +56,3 @@ void turn(int deg, bool left_right)
 			}
 		}
 }
-
