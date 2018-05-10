@@ -22,4 +22,4 @@ Nýtið ykkur Sample program- Shaft encoder- Movement 	by rotation
 Gerið sauðakóða sem textaskjal með C kóðanum og flæðirit áður en þið forritið og skilið í Innu
 Gerið flæðiritið í [Draw.io](http://draw.io) þegar búið farið í  File-export as - image
 Skilið vido af vélmenni leysa allar þrautinar setjið á YouTube og geymið í ykkar repository og skilið slóð á videóið í Innu
-![Mynd af verkefni](/img/.pngverkefni2)
+![Mynd af verkefni](/img/verkefni2.png)
