@@ -28,6 +28,7 @@ Cords *set_cords(){
 	Cords r[COL*ROW];
 	int l=0;
 	for(int k=0;k<5;k++){
+
 		for(int j=0;j<6;j++){
 			r[l].row =k;
 			r[l].col =j;
@@ -38,9 +39,34 @@ Cords *set_cords(){
 	return &r;
 
 };
+<<<<<<< HEAD
 bool drive(int x,int y,bool lr){
 	writeDebugStream("Keyri afram x:%d,y:%d%d\n", x,y,lr);
 	return lr;
+=======
+
+task main()
+{
+	/*
+	Pointer  of type Cords that points to an array of Cords
+	*/
+
+	Cords *ptr = set_cords();
+	int last_number;
+	int *last_pointer = &last_number;
+	//showing the path to the end of the grid
+	for(int i=0;i<30;i++){
+		if(ptr->tf){
+	writeDebugStream("Hnit %d%d%d\n",ptr->row,ptr->col,ptr->tf);
+	if(ptr->row %2==0){
+		last_number = ptr->row;
+	}
+	writeDebugStream("Last_Pointer %d\n",*last_pointer);
+
+}
+// make the pointer trawell throug  the array from one address to an other
+ptr++;
+>>>>>>> f3553a78a0ea7c56ccc8f79a9d16fff89ab5f3e8
 }
 //bool direction(int &x,int &y,Cords *ptr){
 //	if(ptr-col - last_col==1){
