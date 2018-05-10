@@ -1,7 +1,7 @@
 #  Verkefni 2 
 Færslur og snúningar,  vægi 10% af loka einkunn
 
-## 1.hluti suiside (stiginn) 20 stig af 100 
+## 1.hluti suiside 20 stig af 100 
 Hér er það tíminn sem ræður færslunni, nýtið ykkur  Sample program- basic movement- Moving forward
 Kóðið robot þannig að hann keyri 0,5m fram og til baka síðan 1m fram og til baka o.s.fr þar til að komið er að 2,5m.
 Gerið sauðakóða og flæðirit áður en þið forritið og skilið í Innu Munið að kommenta kóðan á svipaðan hátt og hér fyrir
