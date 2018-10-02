@@ -22,15 +22,35 @@
 |*    Motor Port 3        leftMotor           VEX 3-wire module     Left side motor                   *|
 \*-----------------------------------------------------------------------------------------------4246-*/
 
+const int BASETIME = 900;
+const int POWER = 80;
+void driveForward(int counter){
+	motor[rightMotor] = POWER;
+	motor[leftMotor]  = POWER;
+	wait1Msec(BASETIME*counter);
+}
+void driveBackward(int counter){
+	motor[rightMotor] = -POWER;
+	motor[leftMotor]  = -POWER;
+	wait1Msec(BASETIME*counter);
+}
+void stopMotors(){
+	motor[rightMotor] = 0;
+	motor[leftMotor]  = 0;
+}
+
 
 //+++++++++++++++++++++++++++++++++++++++++++++| MAIN |+++++++++++++++++++++++++++++++++++++++++++++++
 task main()
 {
-	wait1Msec(200);						// Robot waits for 2000 milliseconds before executing program
-
-	// Move forward at full power for 3 seconds
-	motor[rightMotor] = 127;		  // Motor on port2 is run at full (127) power forward
-	motor[leftMotor]  = 127;		  // Motor on port3 is run at full (127) power forward
-	wait1Msec(3000);			        // Robot runs previous code for 3000 milliseconds before moving on
-}												        // Program ends, and the robot stops
+	wait1Msec(2000);
+	for(int counter =1;counter < 6; counter ++){
+	driveForward(counter);
+	stopMotors();
+	wait1Msec(1000);
+	driveBackward(counter);
+	stopMotors();
+	wait1Msec(1000);
+}
+}
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
