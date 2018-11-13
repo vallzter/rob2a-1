@@ -5,6 +5,10 @@
 #pragma config(Motor,	 port6,						armMotor,		 tmotorNormal, openLoop)
 #pragma config(Motor,	 port7,						clawMotor,		tmotorNormal, openLoop)
 
+//This program allowes the user to control the robot freely using the remote controller.
+//The Joysticks have been assigned to operate the wheels and the arm.
+//Two of the buttons have been assigned to open and close the claw
+
 //+++++++++++++++++++++++++++++++++++++++++++++| MAIN |+++++++++++++++++++++++++++++++++++++++++++++++
 task main ()
 {
