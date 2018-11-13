@@ -20,16 +20,16 @@ wait1Msec(2000);
 while(true){
 
 		while(SensorValue(sonarSensor) > 70 && SensorValue(LightSensor) < 300){
-				resetEncoder();
-				drive();
+			resetEncoder();
+			drive();
 			}
 		if(SensorValue(sonarSensor) < 70){
-		turn(60,1);
-		stopMotors();
-		}
+			turn(60,1);
+			stopMotors();
+			}
 		else	if(SensorValue(LightSensor) > 300){
 			stopMotors();
+			}
 		}
-	}
 }
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
